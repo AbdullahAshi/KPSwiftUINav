@@ -9,17 +9,18 @@ import SwiftUI
 
 struct FirstDetailView: View {
     
+    @State private var selectedItem: String? = nil
+    
     let item: [String] = ["🤩","😸","☘️","🎃"]
     
     var body: some View {
         
         List(item, id: \.self ) { item in
-
             NavigationLink(
                 destination: EmojiView(item: item),
-                label: {
-                    Text(item)
-                })
+                tag: item,
+                selection: $selectedItem,
+                label: {Text(item)})
         }
 
         Text("First Detail View")

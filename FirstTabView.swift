@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct FirstTabView: View {
+    
+    @State private var firstDetailIsShow: Bool = false
+    
     var body: some View {
         NavigationView {
             VStack {
                 Text("First Tab View")
-                NavigationLink("Go to Detail", destination: FirstDetailView())
+                NavigationLink(
+                    destination: FirstDetailView(),
+                    isActive: $firstDetailIsShow,
+                    label: {
+                        Text("Go to detail")
+                    })
             }
         }
     }
