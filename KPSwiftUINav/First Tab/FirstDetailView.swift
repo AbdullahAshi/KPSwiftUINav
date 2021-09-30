@@ -17,7 +17,7 @@ struct FirstDetailView: View {
         
         List(item, id: \.self ) { item in
             NavigationLink(
-                destination: EmojiView(item: item),
+                destination: EmojiView(item: item,selectedEmoji: $selectedItem),
                 tag: item,
                 selection: $selectedItem,
                 label: {Text(item)})
