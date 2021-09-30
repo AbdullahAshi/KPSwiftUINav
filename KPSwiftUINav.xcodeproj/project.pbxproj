@@ -171,9 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
                 888E3451270597EA0066644A /* KPSwiftUINavApp.swift in Sources */,
-				88372FCD27057E8D00AAD91B /* FirstDetailView.swift in Sources */,
-				88372FCA27057D9400AAD91B /* SecondTabView.swift in Sources */,
-				88372FD027057FDB00AAD91B /* EmojiView.swift in Sources */,
+                88372FCD27057E8D00AAD91B /* FirstDetailView.swift in Sources */,
+                88372FCA27057D9400AAD91B /* SecondTabView.swift in Sources */,
+                88372FD027057FDB00AAD91B /* EmojiView.swift in Sources */,
 				88372FB327057B2F00AAD91B /* ContentView.swift in Sources */,
 				88372FC727057D8900AAD91B /* FirstTabView.swift in Sources */,
 			);
