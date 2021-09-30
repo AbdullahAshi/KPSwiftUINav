@@ -65,8 +65,6 @@
                 888E3450270597EA0066644A /* KPSwiftUINavApp.swift */,
 				88372FC427057D4900AAD91B /* First Tab */,
 				88372FC527057D5A00AAD91B /* Second Tab */,
-				88372FAE27057B2F00AAD91B /* AppDelegate.swift */,
-				88372FB027057B2F00AAD91B /* SceneDelegate.swift */,
 				88372FB227057B2F00AAD91B /* ContentView.swift */,
 				88372FB427057B3100AAD91B /* Assets.xcassets */,
 				88372FB927057B3100AAD91B /* LaunchScreen.storyboard */,
@@ -175,9 +173,7 @@
                 888E3451270597EA0066644A /* KPSwiftUINavApp.swift in Sources */,
 				88372FCD27057E8D00AAD91B /* FirstDetailView.swift in Sources */,
 				88372FCA27057D9400AAD91B /* SecondTabView.swift in Sources */,
-				88372FAF27057B2F00AAD91B /* AppDelegate.swift in Sources */,
 				88372FD027057FDB00AAD91B /* EmojiView.swift in Sources */,
-				88372FB127057B2F00AAD91B /* SceneDelegate.swift in Sources */,
 				88372FB327057B2F00AAD91B /* ContentView.swift in Sources */,
 				88372FC727057D8900AAD91B /* FirstTabView.swift in Sources */,
 			);
