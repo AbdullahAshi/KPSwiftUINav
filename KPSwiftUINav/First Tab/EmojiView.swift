@@ -23,8 +23,7 @@ struct EmojiView: View {
             .background(Color.pink)
             
             Button(action: {
-                stateManager.firstDetailIsShown = false
-//                stateManager.selectedItem = nil // swift is smart enough to set this to nil when navigating to root.
+                stateManager.goToFirstRootView()
             }, label: {
                 Text("Go back to root")
             })

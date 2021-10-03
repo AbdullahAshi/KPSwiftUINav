@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SecondTabView: View {
     
+    @EnvironmentObject private var statemanager: StateManager
     @State private var isPresentingOverlay: Bool = false
     
     var body: some View {
@@ -34,6 +35,16 @@ struct SecondTabView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color.yellow)
             })
+            
+            Button(action: {
+                withAnimation {
+                    statemanager.selection = 1
+                    statemanager.firstDetailIsShown = true
+                }
+                
+            }, label: {
+                Text("go to first tab detail")
+            })
         }
     }
 }
@@ -41,5 +52,6 @@ struct SecondTabView: View {
 struct SecondTabView_Previews: PreviewProvider {
     static var previews: some View {
         SecondTabView()
+            .environmentObject(StateManager())
     }
 }
