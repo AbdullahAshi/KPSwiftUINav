@@ -11,19 +11,9 @@ struct FirstDetailView: View {
     
     @EnvironmentObject var stateManager: StateManager
     
-    let item: [String] = ["🤩","😸","☘️","🎃"]
-    
     var body: some View {
+        EmojiListView (selectedEmoji: $stateManager.selectedItem)
         
-        List(item, id: \.self ) { item in
-            NavigationLink(
-                destination: EmojiView(item: item),
-                tag: item,
-                selection: $stateManager.selectedItem,
-                label: {Text(item)})
-        }
-
-        Text("First Detail View")
     }
 }
 

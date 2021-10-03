@@ -11,12 +11,13 @@
 		88372FB527057B3100AAD91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88372FB427057B3100AAD91B /* Assets.xcassets */; };
 		88372FB827057B3100AAD91B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88372FB727057B3100AAD91B /* Preview Assets.xcassets */; };
 		88372FBB27057B3100AAD91B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88372FB927057B3100AAD91B /* LaunchScreen.storyboard */; };
-        888E3451270597EA0066644A /* KPSwiftUINavApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888E3450270597EA0066644A /* KPSwiftUINavApp.swift */; };
 		88372FC727057D8900AAD91B /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372FC627057D8900AAD91B /* FirstTabView.swift */; };
 		88372FCA27057D9400AAD91B /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372FC927057D9400AAD91B /* SecondTabView.swift */; };
 		88372FCD27057E8D00AAD91B /* FirstDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372FCC27057E8D00AAD91B /* FirstDetailView.swift */; };
 		88372FD027057FDB00AAD91B /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372FCF27057FDB00AAD91B /* EmojiView.swift */; };
 		88372FD32705938E00AAD91B /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372FD22705938E00AAD91B /* StateManager.swift */; };
+		884FF60F2709D6B100421F07 /* EmojiListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884FF60E2709D6B100421F07 /* EmojiListView.swift */; };
+		888E3451270597EA0066644A /* KPSwiftUINavApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888E3450270597EA0066644A /* KPSwiftUINavApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +27,13 @@
 		88372FB727057B3100AAD91B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88372FBA27057B3100AAD91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88372FBC27057B3100AAD91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        888E3450270597EA0066644A /* KPSwiftUINavApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPSwiftUINavApp.swift; sourceTree = "<group>"; };
 		88372FC627057D8900AAD91B /* FirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabView.swift; sourceTree = SOURCE_ROOT; };
 		88372FC927057D9400AAD91B /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
 		88372FCC27057E8D00AAD91B /* FirstDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailView.swift; sourceTree = "<group>"; };
 		88372FCF27057FDB00AAD91B /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 		88372FD22705938E00AAD91B /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
+		884FF60E2709D6B100421F07 /* EmojiListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiListView.swift; sourceTree = "<group>"; };
+		888E3450270597EA0066644A /* KPSwiftUINavApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPSwiftUINavApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,7 @@
 		88372FAD27057B2F00AAD91B /* KPSwiftUINav */ = {
 			isa = PBXGroup;
 			children = (
-                888E3450270597EA0066644A /* KPSwiftUINavApp.swift */,
+				888E3450270597EA0066644A /* KPSwiftUINavApp.swift */,
 				88372FC427057D4900AAD91B /* First Tab */,
 				88372FC527057D5A00AAD91B /* Second Tab */,
 				88372FB227057B2F00AAD91B /* ContentView.swift */,
@@ -91,6 +93,7 @@
 				88372FC627057D8900AAD91B /* FirstTabView.swift */,
 				88372FCC27057E8D00AAD91B /* FirstDetailView.swift */,
 				88372FCF27057FDB00AAD91B /* EmojiView.swift */,
+				884FF60E2709D6B100421F07 /* EmojiListView.swift */,
 			);
 			path = "First Tab";
 			sourceTree = "<group>";
@@ -173,7 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-                888E3451270597EA0066644A /* KPSwiftUINavApp.swift in Sources */,
+				888E3451270597EA0066644A /* KPSwiftUINavApp.swift in Sources */,
+				884FF60F2709D6B100421F07 /* EmojiListView.swift in Sources */,
 				88372FCD27057E8D00AAD91B /* FirstDetailView.swift in Sources */,
 				88372FD32705938E00AAD91B /* StateManager.swift in Sources */,
 				88372FCA27057D9400AAD91B /* SecondTabView.swift in Sources */,
