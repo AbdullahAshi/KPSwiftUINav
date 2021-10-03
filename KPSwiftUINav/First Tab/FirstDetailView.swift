@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FirstDetailView: View {
     
-    @State private var selectedItem: String? = nil
+    @EnvironmentObject var stateManager: StateManager
     
     let item: [String] = ["🤩","😸","☘️","🎃"]
     
@@ -17,9 +17,9 @@ struct FirstDetailView: View {
         
         List(item, id: \.self ) { item in
             NavigationLink(
-                destination: EmojiView(item: item,selectedEmoji: $selectedItem),
+                destination: EmojiView(item: item),
                 tag: item,
-                selection: $selectedItem,
+                selection: $stateManager.selectedItem,
                 label: {Text(item)})
         }
 
@@ -31,6 +31,7 @@ struct FirstDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             FirstDetailView()
+                .environmentObject(StateManager())
         }
     }
 }

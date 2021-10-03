@@ -16,6 +16,7 @@
 		88372FCA27057D9400AAD91B /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372FC927057D9400AAD91B /* SecondTabView.swift */; };
 		88372FCD27057E8D00AAD91B /* FirstDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372FCC27057E8D00AAD91B /* FirstDetailView.swift */; };
 		88372FD027057FDB00AAD91B /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372FCF27057FDB00AAD91B /* EmojiView.swift */; };
+		88372FD32705938E00AAD91B /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372FD22705938E00AAD91B /* StateManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		88372FC927057D9400AAD91B /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
 		88372FCC27057E8D00AAD91B /* FirstDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailView.swift; sourceTree = "<group>"; };
 		88372FCF27057FDB00AAD91B /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		88372FD22705938E00AAD91B /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				88372FB927057B3100AAD91B /* LaunchScreen.storyboard */,
 				88372FBC27057B3100AAD91B /* Info.plist */,
 				88372FB627057B3100AAD91B /* Preview Content */,
+				88372FD22705938E00AAD91B /* StateManager.swift */,
 			);
 			path = KPSwiftUINav;
 			sourceTree = "<group>";
@@ -171,9 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
                 888E3451270597EA0066644A /* KPSwiftUINavApp.swift in Sources */,
-                88372FCD27057E8D00AAD91B /* FirstDetailView.swift in Sources */,
-                88372FCA27057D9400AAD91B /* SecondTabView.swift in Sources */,
-                88372FD027057FDB00AAD91B /* EmojiView.swift in Sources */,
+				88372FCD27057E8D00AAD91B /* FirstDetailView.swift in Sources */,
+				88372FD32705938E00AAD91B /* StateManager.swift in Sources */,
+				88372FCA27057D9400AAD91B /* SecondTabView.swift in Sources */,
+				88372FD027057FDB00AAD91B /* EmojiView.swift in Sources */,
 				88372FB327057B2F00AAD91B /* ContentView.swift in Sources */,
 				88372FC727057D8900AAD91B /* FirstTabView.swift in Sources */,
 			);

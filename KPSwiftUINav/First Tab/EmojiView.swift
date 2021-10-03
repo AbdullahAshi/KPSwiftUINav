@@ -11,7 +11,7 @@ struct EmojiView: View {
     
     let item: String
     
-    @Binding var selectedEmoji: String?
+    @EnvironmentObject var stateManager: StateManager
     
     var body: some View {
         VStack(spacing: 30) {
@@ -22,12 +22,15 @@ struct EmojiView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.pink)
             
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {
+                stateManager.firstDetailIsShown = false
+//                stateManager.selectedItem = nil // swift is smart enough to set this to nil when navigating to root.
+            }, label: {
                 Text("Go back to root")
             })
             
             Button(action: {
-                selectedEmoji = nil
+                stateManager.selectedItem = nil
             }, label: {
                 Text("Go one step back")
             })
@@ -37,6 +40,7 @@ struct EmojiView: View {
 
 struct EmojiView_Previews: PreviewProvider {
     static var previews: some View {
-        EmojiView(item: "😸", selectedEmoji: .constant(""))
+        EmojiView(item: "😸")
+            .environmentObject(StateManager())
     }
 }

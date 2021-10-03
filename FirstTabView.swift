@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FirstTabView: View {
     
-    @State private var firstDetailIsShow: Bool = false
+    @EnvironmentObject var stateManager: StateManager
     
     var body: some View {
         NavigationView {
@@ -17,7 +17,7 @@ struct FirstTabView: View {
                 Text("First Tab View")
                 NavigationLink(
                     destination: FirstDetailView(),
-                    isActive: $firstDetailIsShow,
+                    isActive: $stateManager.firstDetailIsShown,
                     label: {
                         Text("Go to detail")
                     })
@@ -29,5 +29,6 @@ struct FirstTabView: View {
 struct FirstTabView_Previews: PreviewProvider {
     static var previews: some View {
         FirstTabView()
+            .environmentObject(StateManager())
     }
 }
