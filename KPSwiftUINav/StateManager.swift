@@ -10,6 +10,7 @@ import Combine
 
 class StateManager: ObservableObject {
     @Published var selection: Int = 2
+    @Published var selectedListItem: Int? = 1
     @Published var firstDetailIsShown: Bool = false
     @Published var selectedItem: String? = nil
     

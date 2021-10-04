@@ -13,15 +13,7 @@ struct FirstTabView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                Text("First Tab View")
-                NavigationLink(
-                    destination: FirstDetailView(),
-                    isActive: $stateManager.firstDetailIsShown,
-                    label: {
-                        Text("Go to detail")
-                    })
-            }
+            FirstBodyView()
         }
     }
 }

@@ -17,6 +17,7 @@
 		88372FD027057FDB00AAD91B /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372FCF27057FDB00AAD91B /* EmojiView.swift */; };
 		88372FD32705938E00AAD91B /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372FD22705938E00AAD91B /* StateManager.swift */; };
 		884FF60F2709D6B100421F07 /* EmojiListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884FF60E2709D6B100421F07 /* EmojiListView.swift */; };
+		884FF612270A883500421F07 /* FirstBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884FF611270A883500421F07 /* FirstBodyView.swift */; };
 		888E3451270597EA0066644A /* KPSwiftUINavApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888E3450270597EA0066644A /* KPSwiftUINavApp.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		88372FCF27057FDB00AAD91B /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 		88372FD22705938E00AAD91B /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 		884FF60E2709D6B100421F07 /* EmojiListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiListView.swift; sourceTree = "<group>"; };
+		884FF611270A883500421F07 /* FirstBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBodyView.swift; sourceTree = "<group>"; };
 		888E3450270597EA0066644A /* KPSwiftUINavApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPSwiftUINavApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				88372FCC27057E8D00AAD91B /* FirstDetailView.swift */,
 				88372FCF27057FDB00AAD91B /* EmojiView.swift */,
 				884FF60E2709D6B100421F07 /* EmojiListView.swift */,
+				884FF611270A883500421F07 /* FirstBodyView.swift */,
 			);
 			path = "First Tab";
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				88372FD32705938E00AAD91B /* StateManager.swift in Sources */,
 				88372FCA27057D9400AAD91B /* SecondTabView.swift in Sources */,
 				88372FD027057FDB00AAD91B /* EmojiView.swift in Sources */,
+				884FF612270A883500421F07 /* FirstBodyView.swift in Sources */,
 				88372FB327057B2F00AAD91B /* ContentView.swift in Sources */,
 				88372FC727057D8900AAD91B /* FirstTabView.swift in Sources */,
 			);

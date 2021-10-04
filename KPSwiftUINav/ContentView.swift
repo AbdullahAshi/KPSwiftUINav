@@ -10,14 +10,25 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var stateManager: StateManager
     var body: some View {
-        TabView(selection: $stateManager.selection) {
-            FirstTabView()
-                .tabItem { Text("Fisrt") }
-                .tag(1)
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            TabView(selection: $stateManager.selection) {
+                FirstTabView()
+                    .tabItem { Text("Fisrt") }
+                    .tag(1)
+                
+                SecondTabView()
+                    .tabItem { Text("Second") }
+                    .tag(2)
+            }
+        } else {
             
-            SecondTabView()
-                .tabItem { Text("Second") }
-                .tag(2)
+            NavigationView {
+                List {
+                    NavigationLink ("First", destination: FirstBodyView(), tag: 1, selection: $stateManager.selectedListItem)
+                    
+                    NavigationLink ("Second", destination: SecondTabView(), tag: 2, selection: $stateManager.selectedListItem)
+                }
+            }
         }
     }
 }
