@@ -10,7 +10,7 @@ import SwiftUI
 struct EmojiListView: View {
     
     let item: [String] = ["🤩","😸","☘️","🎃"]
-    @Binding selectedEmoji: String?
+    @Binding var selectedEmoji: String?
     
     var body: some View {
         List(item, id: \.self ) { item in
